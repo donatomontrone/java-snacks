@@ -23,3 +23,12 @@ public class Snack4 {
 				);
 	}
 }
+//			int strLng = str.length();
+//			for (int x=0; x<strLng/2; x++) {
+//			int revInd = strLng - x - 1;
+//				if (str.charAt(x) != str.charAt(revInd)) {
+//					System.out.printIn("non e' palindroma");
+//					return;
+//				}
+//			}
+//			System.out.print]n("e' palindroma");
