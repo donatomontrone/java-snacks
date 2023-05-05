@@ -12,7 +12,7 @@ public class Snack8 {
 		int indexEven = 0;
 		for(int i = 0; i < 10; i++) {
 			
-			int num = rnd.nextInt(0,100);
+			int num = rnd.nextInt(101);
 			
 			if(num % 2 == 0) {
 				arrEven[indexEven++] = num;
@@ -23,5 +23,26 @@ public class Snack8 {
 		System.out.println("Lista pari: " + Arrays.asList(arrEven));
 
 		System.out.println("Lista dispari: " + Arrays.asList(arrOdd));
+		
+		//Extra
+		
+		Integer[] strippedEvenArr = new Integer[indexEven];
+		
+		for(int i = 0; i< indexEven; i++) {
+			int evenVal = arrEven[i];
+			strippedEvenArr[i] = evenVal;
+		}
+		
+		System.out.println("-----------------------------");
+		System.out.println( Arrays.asList(strippedEvenArr));
+		
+		Integer[] strippedOddArr = new Integer[indexOdd];
+		
+		for(int i = 0; i< indexOdd; i++) {
+			int oddVal = arrOdd[i];
+			strippedOddArr[i] = oddVal;
+		}
+		
+		System.out.println( Arrays.asList(strippedOddArr));
 	}
 }
