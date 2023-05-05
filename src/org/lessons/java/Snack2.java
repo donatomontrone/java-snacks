@@ -27,8 +27,8 @@ public class Snack2 {
 		
 		int namesLnt = names.length;
 		
+		Random rnd = new Random();
 		for (int i = 0; i < namesLnt; i++) {
-			Random rnd = new Random();
 			int val1 = rnd.nextInt(namesLnt);
 			int val2 = rnd.nextInt(namesLnt);
 			

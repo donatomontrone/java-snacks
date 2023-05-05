@@ -1,6 +1,5 @@
 package org.lessons.java;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class Snack6 {
