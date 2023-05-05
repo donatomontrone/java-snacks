@@ -10,6 +10,8 @@ public class Snack11 {
 		
 		int val = in.nextInt();
 		
+		in.close();
+		
 		for (int i = 1; i < val; i++) {
 			
 			if(val % i == 0) {
