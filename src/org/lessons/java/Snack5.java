@@ -11,11 +11,12 @@ public class Snack5 {
 		int sum = 0;
 		int sumEven = 0;
 		int sumOdd = 0;
-		int min = 100;
+		int oddCount = 0;
+		int min = Integer.MAX_VALUE;
 		int max = 0;
 		
+		Random rnd = new Random();
 		for (int i = 0; i < val; i++) {
-			Random rnd = new Random();
 			
 			int randomNum = rnd.nextInt(0,100);
 			
@@ -25,6 +26,7 @@ public class Snack5 {
 			if (randomNum % 2 == 0) {
 				sumEven += randomNum;
 			} else {
+				oddCount++;
 				sumOdd += randomNum;
 			}
 			
@@ -39,7 +41,7 @@ public class Snack5 {
 		System.out.println("Somma = " + sum);
 		System.out.println("Somma Pari = " + sumEven);
 		System.out.println("Media = " + sum / val);
-		System.out.println("Media dispari = " + sumOdd / val);
+		System.out.println("Media dispari = " + sumOdd / oddCount);
 		System.out.println("Min = " + min);
 		System.out.println("Max = " + max);
 		in.close();
